@@ -1,0 +1,38 @@
+/* Page-specific styling */
+
+#details {
+    margin-left: 15px;
+}
+
+    #details th {
+        text-align: left;
+        padding-right: 10px;
+    }
+
+#from {
+    cursor: pointer;
+    color: #336699;
+}
+
+    #from:focus, #from:hover, #from:active {
+        color: #4ea2df;
+    }
+    
+ .RantBox {
+    width:872px;
+    height:302px;
+    background-image: url("../../images/void_wide.jpg");
+    background-size: contain;
+    color:White;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ input[type=text].RantInput {
+     background-color: transparent;
+     color: white;
+     width: 151;
+     border: none;
+ }
