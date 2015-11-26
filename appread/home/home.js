@@ -35,18 +35,21 @@
 })();
 
 function fadeRant(){
-    /* var rantInput = document.getElementById('rantInput');
-    var opacity = rantInput.style.opacity;
-    
-    function frame(){
-      opacity = opacity - 0.1;
-      rantInput.style.opacity = opacity;
-      if (opacity === 0){
-        clearInterval(id);
-      }
+      // Make sure the message shown after a rant it cleared
+      jQuery("#rantMessage").css({ opacity: 0.0 });
+
+      // Store the font size I started with, since I am going to revert to it
+      var originalSize = jQuery('#rantInput').css('fontSize');
       
-      var id = setInterval(frame, 10);
-      */
-     // app.showNotification("here!","fadeRant");
-      jQuery('#rantInput').animate({ opacity: 0.00 }, 2000);
+      jQuery('#rantInput').animate({ 
+        opacity: 0.00,
+        fontSize: "1px"
+        }, 1500, function(){
+          // Animation complete - show message
+          jQuery('#rantMessage').animate({opacity: 1.00},500);
+          
+          // Bring back the rant from the void so that the user can see it
+          jQuery('#rantInput').animate({opacity: 1.00, fontSize: originalSize },300);
+        });
     };
+   

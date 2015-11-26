@@ -27,23 +27,18 @@
 
 <body>
   <div id="content-main">
-    <div class="RantBox">
-      <input class="RantInput" type="text" placeholder="[Enter your rant here]" id="rantInput"/>
-    </div>
-    <button type="button" onclick="fadeRant()">Rant!</button>
     <div class="padding">
-      <p><strong>Add home screen content here.</strong></p>
-      <p>For example, this app was activated with following details:</p>
-      <table id="details">
-        <tr>
-          <th>Subject:</th>
-          <td id="subject"></td>
-        </tr>
-        <tr>
-          <th>From:</th>
-          <td id="from"></td>
-        </tr>
-      </table>
+      <div class="RantBox">
+        <table>
+          <tr><td>
+            <div class="RantMessage" id="rantMessage">Glad nobody read <span style="font-style: italic;">that!</span></div>
+          </td></tr>
+          <tr><td>
+            <input class="RantInput" autofocus spellcheck='false' type="textarea" placeholder="[Enter your rant here]" id="rantInput"/>
+          </td></tr>
+        </table>
+      </div>
+      <button type="button" onclick="fadeRant()">Rant!</button>
     </div>
   </div>
   <div id="content-footer">
