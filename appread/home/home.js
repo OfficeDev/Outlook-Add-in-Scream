@@ -24,6 +24,7 @@ function fadeRant(){
           jQuery('#rantMessage').animate({opacity: 1.00},500);
           
           // Bring back the rant from the void so that the user can see it
+          jQuery('#rantInput').val("");
           jQuery('#rantInput').animate({opacity: 1.00, fontSize: originalSize },300);
         });
     };
