@@ -30,9 +30,11 @@
 }
 
  input[type=textarea].RantInput {
+     background: transparent;
      background-color: transparent;
      color: white;
      width: 151;
      border: none;
      font-size: large;
+     outline: none;
  }
