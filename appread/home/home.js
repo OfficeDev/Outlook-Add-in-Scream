@@ -5,13 +5,16 @@
   Office.initialize = function(reason){
     jQuery(document).ready(function(){
       app.initialize();
+      jQuery('#rantInput').on('input', function() {
+        clearMessages();
+      });
     });
   };
 })();
 
 function fadeRant(){
       // Make sure the message shown after a rant it cleared
-      jQuery("#rantMessage").css({ opacity: 0.0 });
+      clearMessages();
       
       // Only post if rant message is not empty
       if (jQuery('#rantInput').val() == ''){
@@ -34,4 +37,11 @@ function fadeRant(){
         });
       }
     };
+    
+ function clearMessages() {
+   
+   jQuery("#rantMessage").css({ opacity: 0.0 });
+   jQuery('#notification-message').hide();
+   
+ }
    
