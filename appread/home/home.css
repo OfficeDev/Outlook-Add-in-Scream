@@ -19,6 +19,16 @@
     font-size: x-large;
 }
 
+.RantButton {
+    background-color: transparent;
+    color: white;
+    margin-left: 40px;
+}
+
+.RantButton:hover {
+    color: black;
+}
+
  input[type=textarea].RantInput {
      background-color: transparent;
      color: white;

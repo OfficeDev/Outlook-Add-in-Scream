@@ -3,11 +3,14 @@
 
   // The Office initialize function must be run each time a new page is loaded
   Office.initialize = function(reason){
-    jQuery(document).ready(function(){
+    $(document).ready(function(){
       app.initialize();
-      jQuery('#rantInput').on('input', function() {
+      $('#rantInput').on('input', function() {
         clearMessages();
       });
+      
+      // Focus on the input field.
+      $('#rantInput').focus();
     });
   };
 })();
