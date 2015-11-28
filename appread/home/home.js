@@ -12,7 +12,12 @@
 function fadeRant(){
       // Make sure the message shown after a rant it cleared
       jQuery("#rantMessage").css({ opacity: 0.0 });
-
+      
+      // Only post if rant message is not empty
+      if (jQuery('#rantInput').val() == ''){
+        app.showNotification("Nothing to scream","Enter your feelings in the text field before hitting the scream button.");
+      }
+      else {
       // Store the font size I started with, since I am going to revert to it
       var originalSize = jQuery('#rantInput').css('fontSize');
       
@@ -23,9 +28,10 @@ function fadeRant(){
           // Animation complete - show message
           jQuery('#rantMessage').animate({opacity: 1.00},500);
           
-          // Bring back the rant from the void so that the user can see it
-          jQuery('#rantInput').val("");
-          jQuery('#rantInput').animate({opacity: 1.00, fontSize: originalSize },300);
+          // Show input field again
+          jQuery('#rantInput').val('');
+          jQuery('#rantInput').animate({opacity: 1.00, fontSize: originalSize },500);
         });
+      }
     };
    
