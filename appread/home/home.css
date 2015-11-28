@@ -1,28 +1,10 @@
 /* Page-specific styling */
-
-#details {
-    margin-left: 15px;
-}
-
-    #details th {
-        text-align: left;
-        padding-right: 10px;
-    }
-
-#from {
-    cursor: pointer;
-    color: #336699;
-}
-
-    #from:focus, #from:hover, #from:active {
-        color: #4ea2df;
-    }
-    
  .RantBox {
-    width:872px;
-    height:302px;
+    height:100%;
     background-image: url("../../images/void_wide.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     color:White;
     margin:0 auto;
     display: flex;
