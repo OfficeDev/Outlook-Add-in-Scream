@@ -16,6 +16,7 @@
     opacity: 0;
     color: white;
     margin-bottom: 5px;
+    margin-left: 110px;
     font-size: xx-large;
 }
 
@@ -23,6 +24,7 @@
     background-color: transparent;
     color: white;
     margin: 10px;
+    margin-left: 110px;
     font-size: x-large;
     text-align: center;
     line-height: inherit;
@@ -36,6 +38,7 @@
      background-color: transparent !important;
      color: white;
      width: 300;
+     margin-left: 110px;
      border: none !important;
      font-size: x-large;
      outline: none !important;
