@@ -33,10 +33,10 @@
 }
 
  .RantInput {
-     background-color: transparent;
-     color: black;
+     background-color: transparent !important;
+     color: white;
      width: 300;
-     border: none;
+     border: none !important;
      font-size: x-large;
-     outline: none;
+     outline: none !important;
  }
