@@ -22,7 +22,7 @@
 .RantButton {
     background-color: transparent;
     color: white;
-    margin-left: 40px;
+    margin: 10px;
     font-size: x-large;
     text-align: center;
     line-height: inherit;
@@ -39,4 +39,5 @@
      border: none !important;
      font-size: x-large;
      outline: none !important;
+     height: 40px;
  }

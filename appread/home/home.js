@@ -28,13 +28,13 @@ function fadeRant(){
   $('#rantInput').animate({ 
     opacity: 0.00,
     fontSize: "1px"
-    }, 1500, function(){
+    }, 1200, function(){
       // Animation complete - show message
-      $('#rantMessage').animate({opacity: 1.00},500);
+      $('#rantMessage').animate({opacity: 1.00},600);
       
       // Show input field again
       $('#rantInput').val('');
-      $('#rantInput').animate({opacity: 1.00, fontSize: originalSize },500);
+      $('#rantInput').animate({opacity: 1.00, fontSize: originalSize },600);
     });
   }
 };
