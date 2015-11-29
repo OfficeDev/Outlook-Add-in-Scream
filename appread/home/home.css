@@ -16,25 +16,27 @@
     opacity: 0;
     color: white;
     margin-bottom: 5px;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .RantButton {
     background-color: transparent;
     color: white;
     margin-left: 40px;
+    font-size: x-large;
+    text-align: center;
+    line-height: inherit;
 }
 
 .RantButton:hover {
     color: black;
 }
 
- input[type=textarea].RantInput {
-     background: transparent;
+ .RantInput {
      background-color: transparent;
-     color: white;
-     width: 151;
+     color: black;
+     width: 300;
      border: none;
-     font-size: large;
+     font-size: x-large;
      outline: none;
  }
