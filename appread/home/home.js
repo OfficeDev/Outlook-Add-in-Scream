@@ -1,10 +1,11 @@
 (function(){
   'use strict';
-
+  
   // The Office initialize function must be run each time a new page is loaded
   Office.initialize = function(reason){
     $(document).ready(function(){
       app.initialize();
+      
       $('#rantInput').on('input', function() {
         clearMessages();
       });
@@ -35,6 +36,8 @@ function fadeRant(){
       // Show input field again
       $('#rantInput').val('');
       $('#rantInput').animate({opacity: 1.00, fontSize: originalSize },600);
+      
+      updateRantCount();
     });
   }
 };
@@ -43,4 +46,22 @@ function fadeRant(){
    $("#rantMessage").css({ opacity: 0.0 });
    $('#notification-message').hide();
  }
+ 
+ function updateRantCount() {
+   var settings = Office.context.roamingSettings;
+   var rantCount = settings.get("rantCount");
+   rantCount++;
+   
+   // Update UI with this value too
+   app.showNotification("Number of rants",rantCount);
+   settings.set("rantCount", rantCount);
+   settings.saveAsync(saveSettingsCallback);
+ }
+ 
+// Saves all roaming settings.
+function saveSettingsCallback(asyncResult) {
+    if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+        // Handle the failure.
+    }
+} 
    
