@@ -8,9 +8,7 @@
       $('#rantInput').on('input', function() {
         clearMessages();
       });
-      
-      // Focus on the input field.
-      $('#rantInput').focus();
+
     });
   };
 })();
