@@ -6,6 +6,7 @@
     $(document).ready(function(){
       app.initialize();
       
+      // When the user starts typing, clear all visible messages on the screen
       $('#rantInput').on('input', function() {
         clearMessages();
       });
@@ -14,6 +15,7 @@
   };
 })();
 
+// Fades whatever the user wrote into "the void"
 function fadeRant(){
   // Make sure the message shown after a rant it cleared
   clearMessages();
@@ -41,12 +43,15 @@ function fadeRant(){
     });
   }
 };
-    
+ 
+ // Clears notification message and rant message   
  function clearMessages() {
    $("#rantMessage").css({ opacity: 0.0 });
    $('#notification-message').hide();
  }
  
+ // Stores an updated count of the total number of rants this user has "screamed" into roaming settings
+ // See https://msdn.microsoft.com/EN-US/library/office/fp123509.aspx#PersistRoamingSettingsMailApp
  function updateRantCount() {
    var settings = Office.context.roamingSettings;
    var rantCount = settings.get("rantCount");
@@ -61,7 +66,10 @@ function fadeRant(){
 // Saves all roaming settings.
 function saveSettingsCallback(asyncResult) {
     if (asyncResult.status == Office.AsyncResultStatus.Failed) {
-        // Handle the failure.
+      
+        // Handle the failure
+        var err = asyncResult.error;
+        app.showNotification("Failed to update Rant Count", err.name + ": " + err.message);
     }
 } 
    
