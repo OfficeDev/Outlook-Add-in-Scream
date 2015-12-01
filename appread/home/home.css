@@ -34,13 +34,13 @@
     color: black;
 }
 
- .RantInput {
-     background-color: transparent !important;
+ input.RantInput {
+     background-color: transparent;
      color: white;
      width: 300;
      margin-left: 110px;
-     border: none !important;
+     border: none;
      font-size: x-large;
-     outline: none !important;
+     outline: none;
      height: 40px;
  }
