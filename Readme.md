@@ -30,5 +30,5 @@
 ## Helpful links
 
 * [Yeoman generator](https://github.com/OfficeDev/generator-office) - Yeoman generator for building Microsoft Office related projects (including Add-ins). This project was built using it.
-* [Office UI Fabric](https://github.com/OfficeDev/Office-UI-Fabric/) - The front-end framework for building experiences for Office 365. This project uses it to get an Office "look and feel". 
-* [dev.office.com](http://dev.office.com) - Find documentation, samples, and other helpful information relevant to Office development.
+* [Office UI Fabric](https://dev.office.com/fabric) - The front-end framework for building experiences for Office 365. This project uses it to get an Office "look and feel". 
+* [dev.office.com](https://dev.office.com) - Find documentation, samples, and other helpful information relevant to Office development.
