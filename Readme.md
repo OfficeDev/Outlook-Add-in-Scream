@@ -1,6 +1,6 @@
-# Rant Away!
+# Scream into the void
 
-**Rant Away!** is an Office Add-in built for Outlook that let's you rant about the email you are reading. 
+**Scream into the void** is an Outlook Add-in that let's you rant about the email you are reading. This sample also demonstrates the use of RoamingSettings, a feature of Outlook Add-ins to store roaming data in the user's server mailbox. 
 
 ## Required tools
 
@@ -25,7 +25,7 @@
 
 1. After installing the Add-in, go to [mail.office365.com](mail.office365.com). 
 2. Open an email.
-3. Click *Add-ins* at the top of the window to see available Add-ins and choose **Rant Away!**.
+3. Click *Add-ins* at the top of the window to see available Add-ins and choose **Scream into the void**.
 
 ## Helpful links
 
