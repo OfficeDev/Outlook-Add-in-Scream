@@ -1,4 +1,4 @@
-# Scream into the void
+# Outlook Add-in: Using RoamingSettings to store add-in state in a user's server mailbox.
 
 **Table of contents**
 
