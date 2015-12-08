@@ -44,3 +44,10 @@
      outline: none;
      height: 40px;
  }
+ 
+ .RantCountMessage {
+     color: white;
+     font-size: large;
+     text-align: left;
+     margin-left: 110px;
+ }

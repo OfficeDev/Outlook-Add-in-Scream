@@ -6,6 +6,8 @@
     $(document).ready(function(){
       app.initialize();
       
+      displayTotalRantCount();
+      
       // When the user starts typing, clear all visible messages on the screen.
       $('#rantInput').on('input', function() {
         clearMessages();
@@ -43,6 +45,7 @@ function fadeRant(){
       $('#rantInput').animate({opacity: 1.00, fontSize: originalSize },600);
       
       updateRantCount();
+      displayTotalRantCount();
     });
   }
 };
@@ -56,14 +59,26 @@ function fadeRant(){
  // Stores an updated count of the total number of rants this user has "screamed" into roaming settings.
  // See https://msdn.microsoft.com/EN-US/library/office/fp123509.aspx#PersistRoamingSettingsMailApp
  function updateRantCount() {
-   var settings = Office.context.roamingSettings;
-   var rantCount = settings.get("rantCount");
+   var rantCount = getRantCount();
    rantCount++;
-   
-   // Update UI with this value too
-   app.showNotification("Number of rants",rantCount);
-   settings.set("rantCount", rantCount);
+   setRantCount(rantCount);
+ }
+ 
+ function getRantCount() {
+   var settings = Office.context.roamingSettings;
+   return  settings.get("rantCount");
+ }
+ 
+ function setRantCount(newCount) {
+   var settings = Office.context.roamingSettings;
+   settings.set("rantCount", newCount);
    settings.saveAsync(saveSettingsCallback);
+ }
+ 
+ function displayTotalRantCount() {
+   var settings = Office.context.roamingSettings;
+   var total = settings.get("rantCount");
+   $('#rantCountMessage').text("Total number of rants:" + " " + total);
  }
  
 // Saves all roaming settings.
