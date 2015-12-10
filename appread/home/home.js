@@ -71,7 +71,13 @@ function fadeRant(){
  
  function getRantCount() {
    var settings = Office.context.roamingSettings;
-   return  settings.get("rantCount");
+   var count = settings.get("rantCount");
+   
+   // If rantCount has never been set, it will be null.
+   if (isNaN(parseInt(count))) {
+     count = 0;
+   }
+   return count;
  }
  
  function setRantCount(newCount) {
@@ -81,8 +87,8 @@ function fadeRant(){
  }
  
  function displayTotalRantCount() {
-   var settings = Office.context.roamingSettings;
-   var total = settings.get("rantCount");
+   var total = getRantCount();
+   
    $('#rantCountMessage').text("Total number of rants:" + " " + total);
  }
  
