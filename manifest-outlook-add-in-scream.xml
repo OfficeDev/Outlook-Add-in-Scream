@@ -6,7 +6,7 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
 xsi:type="MailApp">
   <Id>6de21374-125a-44fe-b55b-876f28e5d3db</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>[Provider name]</ProviderName>
+  <ProviderName>Microsoft Office Dev Center</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Scream into the void"/>
   <Description DefaultValue="Scream"/>
@@ -89,9 +89,9 @@ xsi:type="MailApp">
         <bt:Url id="functionFile" DefaultValue="https://localhost:8443/AppRead/Home/Home.html" />
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="MyButtonLabel" DefaultValue="Launch Scream into the void"></bt:String>
+        <bt:String id="MyButtonLabel" DefaultValue="Scream!"></bt:String>
         <bt:String id="MyButtonTooltip" DefaultValue="Launches the add-in"></bt:String>
-        <bt:String id="MyGroupLabel" DefaultValue="Scream into the void"></bt:String>
+        <bt:String id="MyGroupLabel" DefaultValue="OfficeDev sample"></bt:String>
         <bt:String id="MyButtonSuperTipTitle" DefaultValue="Launches the add-in"></bt:String>
       </bt:ShortStrings>
       <bt:LongStrings>
