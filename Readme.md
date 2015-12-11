@@ -12,7 +12,11 @@
 
 <a name="summary"></a>
 ##Summary
-**Scream into the void** is an Outlook Add-in that let's you rant about the email you are reading. This sample also demonstrates the use of RoamingSettings, a feature of Outlook Add-ins to store roaming data in the user's mailbox. 
+**Scream into the void** is an Outlook Add-in that let's you rant about the email you are reading. This sample also demonstrates the use of RoamingSettings, a feature of Outlook Add-ins to store roaming data in the user's mailbox.
+
+ 
+![](/readme-images/animated_screenshot.gif)
+
 
 <a name="prereq"></a>
 ## Required tools
