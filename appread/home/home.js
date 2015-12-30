@@ -31,7 +31,7 @@ function fadeRant(){
   clearMessages();
   
   // Only post if rant message is not empty.
-  if ($('#rantInput').val() == ''){
+  if ($('#rantInput').val() === ''){
     app.showNotification("Nothing to scream","Enter your feelings in the text field before hitting the scream button.");
   }
   else {
@@ -96,7 +96,7 @@ function fadeRant(){
  
 // Saves all roaming settings.
 function saveSettingsCallback(asyncResult) {
-    if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
       
         // Handle the failure
         var err = asyncResult.error;
