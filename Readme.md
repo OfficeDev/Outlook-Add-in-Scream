@@ -1,4 +1,4 @@
-# Outlook Add-in: Using RoamingSettings to store add-in state in a user's mailbox.
+# Outlook Add-in: Using RoamingSettings to store add-in state in a user's mailbox
 
 **Table of contents**
 
