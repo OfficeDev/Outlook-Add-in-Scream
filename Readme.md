@@ -12,7 +12,7 @@
 
 <a name="summary"></a>
 ##Summary
-**Scream into the void** is an Outlook Add-in that let's you rant about the email you are reading. This sample also demonstrates the use of RoamingSettings, a feature of Outlook Add-ins to store roaming data in the user's mailbox.
+**Scream into the void** is an Outlook add-in that let's you rant about the email you are reading. This sample also demonstrates the use of RoamingSettings, a feature of Outlook add-ins to store roaming data in the user's mailbox.
 
  
 ![](/readme-images/animated_screenshot.gif)
@@ -41,9 +41,9 @@
 <a name="run"></a>
 ## How to run
 
-1. After installing the Add-in, go to [mail.office365.com](mail.office365.com). 
+1. After installing the add-in, go to [mail.office365.com](mail.office365.com). 
 2. Open an email.
-3. Click *Add-ins* at the top of the window to see available Add-ins and choose **Scream into the void**.
+3. Click *Add-ins* at the top of the window to see available add-ins and choose **Scream into the void**.
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
@@ -54,7 +54,7 @@
 ## Questions and comments
 
 - If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Outlook-Add-in-Scream/issues).
-- Questions about Office Add-ins development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
+- Questions about Office add-ins development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
 
 
 <a name="additional-resources"></a>

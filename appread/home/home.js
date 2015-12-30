@@ -11,6 +11,8 @@
     $(document).ready(function(){
       app.initialize();
       
+      $('#rantButton').click(fadeRant);
+      
       displayTotalRantCount();
       
       // When the user starts typing, clear all visible messages on the screen.

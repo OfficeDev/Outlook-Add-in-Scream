@@ -4,7 +4,7 @@
  */
 
 /* Page-specific styling */
- .RantBox {
+.RantBox {
     height:100%;
     background-image: url("../../images/void_wide.jpg");
     background-size: cover;
@@ -39,7 +39,7 @@
     color: black;
 }
 
- input.RantInput {
+input.RantInput {
      background-color: transparent;
      color: white;
      width: 300;
@@ -50,9 +50,9 @@
      height: 40px;
  }
  
- .RantCountMessage {
+.RantCountMessage {
      color: white;
      font-size: large;
      text-align: left;
      margin-left: 110px;
- }
+}
