@@ -12,7 +12,7 @@
 
 <a name="summary"></a>
 ##Summary
-**Scream into the void** is an Outlook add-in that let's you rant about the email you are reading. This sample also demonstrates the use of RoamingSettings, a feature of Outlook add-ins to store roaming data in the user's mailbox.
+**Scream into the void** is a Microsoft Outlook add-in that lets you rant about the email you are reading. This sample also demonstrates the use of RoamingSettings, a feature of Outlook add-ins to store roaming data in the user's mailbox.
 
  
 ![](/readme-images/animated_screenshot.gif)
@@ -31,9 +31,9 @@
 1. Clone this repository.
 2. Run `npm install` to install both npm and Bower dependencies.
 3. Run `gulp serve-static` to start development server.
-4. Go to [mail.office365.com](http://mail.office365.com) and sign in with your Office 365 account.
-5. Click the gear icon on the upper right, then choose *Manage add-ins*.
-6. Click the plus icon, then choose *Add from a file*.
+4. Go to [mail.office365.com](http://mail.office365.com) and sign in with your Microsoft Office 365 account.
+5. Click the gear icon for the Settings menu on the nav bar, and then choose *Manage add-ins*.
+6. Click the plus (+) icon, and then choose *Add from a file*.
 7. Browse to this repository folder and choose *manifest-outlook-add-in-scream.xml*.
 8. Complete the wizard (*Next*, *Install*, *OK*) to make the Add-in available on your Office 365 account.
 9. Open the [app](https://localhost:8443/appread/index.html) in a browser and trust the certificate for `localhost:8443`. The add-in won't run if your computer doesn't trust it.
@@ -41,20 +41,20 @@
 <a name="run"></a>
 ## How to run
 
-1. After installing the add-in, go to [mail.office365.com](mail.office365.com). 
+1. After installing the add-in, go to [mail.office365.com](http://mail.office365.com). 
 2. Open an email.
 3. Click *Add-ins* at the top of the window to see available add-ins and choose **Scream into the void**.
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
 
-- If the add-in does not appear in the task pane, Choose **Insert > My Add-ins >  Scream into the void**.
+- If the add-in doesn't appear in the task pane, choose **Insert > My Add-ins >  Scream into the void**.
 
 <a name="questions"></a>
 ## Questions and comments
 
 - If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Outlook-Add-in-Scream/issues).
-- Questions about Office add-ins development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
+- Questions about Microsoft Office add-ins development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
 
 
 <a name="additional-resources"></a>

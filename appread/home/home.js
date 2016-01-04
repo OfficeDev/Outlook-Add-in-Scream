@@ -24,7 +24,7 @@
   };
 })();
 
-// Fades whatever the user wrote into 'the void'.
+// Fades whatever the user typed.
 function fadeRant(){
   
   // Make sure the message shown after a rant it cleared.
@@ -35,7 +35,7 @@ function fadeRant(){
     app.showNotification('Nothing to scream','Enter your feelings in the text field before hitting the scream button.');
   }
   else {
-    // Store the font size I started with, since I am going to revert to it.
+    // Store the font size you started with, since you're going to revert to it.
     var originalSize = jQuery('#rantInput').css('fontSize');
     
     $('#rantInput').animate({ 
@@ -66,7 +66,7 @@ function fadeRant(){
     var settings = Office.context.roamingSettings;
     var count = settings.get('rantCount');
    
-    // If rantCount has never been set, it will be null.
+    // If rantCount has never been set, it'll be null.
     if (isNaN(parseInt(count))) {
         count = 0;
     }
@@ -96,7 +96,7 @@ function saveSettingsCallback(asyncResult) {
       
         // Handle the failure
         var err = asyncResult.error;
-        app.showNotification('Failed to update Rant Count', err.name + ': ' + err.message);
+        app.showNotification('Failed to update rant count', err.name + ': ' + err.message);
     }
 } 
    
