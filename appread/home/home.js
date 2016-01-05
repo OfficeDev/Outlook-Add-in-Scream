@@ -3,9 +3,9 @@
  * See LICENSE in the project root for license information.
  */
 
+/* global Office */
 (function(){
   'use strict';
-  
   // The Office initialize function must be run each time a new page is loaded.
   Office.initialize = function(reason){
     $(document).ready(function(){
@@ -26,7 +26,7 @@
 
 // Fades whatever the user typed.
 function fadeRant(){
-  
+    
   // Make sure the message shown after a rant it cleared.
   clearMessages();
   
@@ -36,7 +36,7 @@ function fadeRant(){
   }
   else {
     // Store the font size you started with, since you're going to revert to it.
-    var originalSize = jQuery('#rantInput').css('fontSize');
+    var originalSize = $('#rantInput').css('fontSize');
     
     $('#rantInput').animate({ 
         opacity: 0.00,

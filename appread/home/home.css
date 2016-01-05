@@ -3,56 +3,87 @@
  * See LICENSE in the project root for license information.
  */
 
-/* Page-specific styling */
-.RantBox {
-    height:100%;
-    background-image: url("../../images/void_wide.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color:White;
-    margin:0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.RantMessage {
+body {
+    background: url("../../images/void_wide.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.clear{
+    clear:both;
+    height: 0;
+    display: block;
+}
+
+/* Center block  */
+/* Centering solution from https://css-tricks.com/centering-in-the-unknown/ */
+
+.center-block {
+    text-align: center;
+    height: 100%;
+    color:White;
+}
+
+.center-block:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.center-block__content {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.center-block__rant{
+    display: block;
+}
+
+.center-block__rant--align{
+    text-align: center;
+}
+
+.center-block__rant--color{
+    color:white;
+}
+
+/* Styles for individual items */
+#rantMessage {
+    display: block;
     opacity: 0;
-    color: white;
-    margin-bottom: 5px;
-    margin-left: 110px;
     font-size: xx-large;
 }
 
-.RantButton {
+#rantButton {
     background-color: transparent;
-    color: white;
-    margin: 10px;
-    margin-left: 110px;
     font-size: x-large;
-    text-align: center;
     line-height: inherit;
+    transition: background-color ease 0.2s;
 }
 
-.RantButton:hover {
+#rantButton:hover {
     color: black;
+    background-color: white;
 }
 
-input.RantInput {
+#rantInput {
      background-color: transparent;
-     color: white;
      width: 300;
-     margin-left: 110px;
      border: none;
      font-size: x-large;
      outline: none;
      height: 40px;
  }
  
-.RantCountMessage {
-     color: white;
+#rantCountMessage {
      font-size: large;
-     text-align: left;
-     margin-left: 110px;
 }
+
+

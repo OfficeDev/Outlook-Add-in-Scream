@@ -28,24 +28,17 @@
 </head>
 
 <body>
-  <div id="content-main">
-    <div class="RantBox">
-        <table>
-          <tr><td>
-            <div class="RantMessage" id="rantMessage">Glad nobody read <span style="font-style: italic;">that!</span></div>
-          </td></tr>
-          <tr><td>
-            <input class="RantInput" spellcheck='false' type="text" placeholder="[Enter your rant here]" id="rantInput"/>
-          </td></tr>
-          <tr><td>
-            <button type="button" class="RantButton" id="rantButton">scream!</button>
-          </td></tr>
-          <tr><td>
-            <div class="RantCountMessage" id="rantCountMessage"></div>
-          </td></tr>
-        </table>
-      </div>
-  </div>
+    <div class="center-block">
+        <div class="center-block__content">
+            <div class="center-block__rant"> 
+                <div id="rantMessage" class="center-block__rant--align  center-block__rant--color" >Glad nobody read <span style="font-style: italic;">that!</span></div>
+                <input id="rantInput" class="center-block__rant--align  center-block__rant--color"  type="text" placeholder="[Enter your rant here]" spellcheck='false'/>
+                 <div class="clear"></div> 
+                <button id="rantButton" type="button" class="center-block__rant--align  center-block__rant--color" >scream!</button>
+                <div id="rantCountMessage" class="center-block__rant--align  center-block__rant--color"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
