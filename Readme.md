@@ -32,7 +32,7 @@
 1. Clone this repository.
 2. Run `npm install` to install both npm and Bower dependencies.
 3. Run `gulp serve-static` to start development server.
-4. Go to [mail.office365.com](http://mail.office365.com) and sign in with your Microsoft Office 365 account.
+4. Go to [mail.office365.com](http://mail.office365.com) and sign in with your Microsoft Office 365 account. If you don't have one, [join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
 5. Click the gear icon for the Settings menu on the nav bar, and then choose *Manage add-ins*.
 6. Click the plus (+) icon, and then choose *Add from a file*.
 7. Browse to this repository folder and choose *manifest-outlook-add-in-scream.xml*.
