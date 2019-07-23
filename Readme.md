@@ -1,3 +1,16 @@
+---
+page_type: sample
+products:
+- office-365
+- office-outlook
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 12/8/2015 1:47:55 AM
+---
 # Outlook Add-in: Using RoamingSettings to store add-in state in a user's mailbox
 
 **Table of contents**
