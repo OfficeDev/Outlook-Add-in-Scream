@@ -1,45 +1,35 @@
 ---
 page_type: sample
 products:
+- office
 - office-365
 - office-outlook
 languages:
 - javascript
+description: "Scream into the void is a Microsoft Outlook add-in that lets you rant about the email you are reading."
+urlFragment: scream-into-void
 extensions:
   contentType: samples
   technologies:
   - Add-ins
-  createdDate: 12/8/2015 1:47:55 AM
+  createdDate: "12/8/2015 1:47:55 AM"
 ---
+
 # Outlook Add-in: Using RoamingSettings to store add-in state in a user's mailbox
 
-**Table of contents**
+## Summary
 
-* [Summary](#summary)
-* [Required tools](#prereq)
-* [How to install](#install)
-* [How to run](#run)
-* [Troubleshooting](#troubleshooting)
-* [Questions and comments](#questions)
-* [Contributing](#contribute)
-* [Additional resources](#additional-resources)
-
-<a name="summary"></a>
-##Summary
 **Scream into the void** is a Microsoft Outlook add-in that lets you rant about the email you are reading. This sample also demonstrates the use of RoamingSettings, a feature of Outlook add-ins to store roaming data in the user's mailbox.
 
  
 ![](/readme-images/animated_screenshot.gif)
 
-
-<a name="prereq"></a>
 ## Required tools
 
 * [npm](https://www.npmjs.com/)
 * [Bower](http://bower.io/)
 * [Gulp](http://gulpjs.com/)
 
-<a name="install"></a>
 ## How to install
 
 1. Clone this repository.
@@ -52,34 +42,28 @@ extensions:
 8. Complete the wizard (*Next*, *Install*, *OK*) to make the Add-in available on your Office 365 account.
 9. Open the [app](https://localhost:8443/appread/index.html) in a browser and trust the certificate for `localhost:8443`. The add-in won't run if your computer doesn't trust it.
 
-<a name="run"></a>
 ## How to run
 
 1. After installing the add-in, go to [mail.office365.com](http://mail.office365.com). 
 2. Open an email.
 3. Click *Add-ins* at the top of the window to see available add-ins and choose **Scream into the void**.
 
-<a name="troubleshooting"></a>
 ## Troubleshooting
 
 - If the add-in doesn't appear in the task pane, choose **Insert > My Add-ins >  Scream into the void**.
 
-<a name="questions"></a>
 ## Questions and comments
 
 - If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Outlook-Add-in-Scream/issues).
 - Questions about Microsoft Office add-ins development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
 
+## Contributing
 
-<a name="contribute"></a>
-## Contributing ##
 We encourage you to contribute to our samples. For guidelines on how to proceed, see our [contribution guide](./Contributing.md)
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-
-<a name="additional-resources"></a>
-## Additional resources ##
+## Additional resources
 
 - [More Add-in samples](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-Add-in)
 - [Office Add-ins](http://msdn.microsoft.com/library/office/jj220060.aspx)
